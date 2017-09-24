@@ -7,7 +7,8 @@
     "start": "node .",
     "build": "webpack",
     "build:w": "webpack -w",
-    "test": "webpack"
+    "test": "webpack",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",

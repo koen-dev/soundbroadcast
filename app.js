@@ -3,7 +3,6 @@ const fs   =  require('fs');
 const path =  require('path');
 const server = http.createServer(handler);
 const io = require('socket.io')(server);
-const open = require('opn');
 const apiRegex = /^\/api/i;
 const port = (process.env.NODE_ENV === "prod") ? 80 : 8080;
 
@@ -42,4 +41,3 @@ io.on('connection', (socket) => {
 
 server.listen(port);
 console.log(`Server listening on port ${port}`);
-//open(`http://localhost:${8080}`);
